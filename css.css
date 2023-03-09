@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --title-color: #1B1B1B;
+    --span-color: #8F8F8F;
+    --text-color: #39393A;
+}
+
+body {
+    background-color: #EAEAEA;
+}
+.main {
+    margin: 40px auto 0;
+    background-color: white;
+    width: 70vw;
+    height: 80%;
+    /* height: 100vh; varia pq é de acordo com oq está sendo visto na tela, então tomar cuidado porque 80vh n é a mesma coisa que 80%, 80vh é referente a 80% do que está sendo visto agr na tela e nao ao todo(oq se refere a porcentagem)*/
+    border-radius: 10px;
+}
+.main header {
+    text-align: center;
+    padding: 40px 0 20px 0;
+}
+
+.main header h1 {
+    color: var(--title-color);
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.main figure {
+    display: flexbox;
+    text-align: center;
+}
+
+.main figure img {
+    text-align: center;
+    height: 400px;
+    width: 900px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+figcaption {
+    /* width: 98%; */
+    padding-right: 40px;
+    text-align: right;
+    color: var(--span-color);
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section { 
+    color: var(--text-color);
+    margin-bottom: 50px;
+    padding: 0 10px 0 10px;
+}
+ul,ol {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+ul li, p {
+    padding-left: 13px;
+}
+
+p {
+    box-sizing: border-box;
+     padding-bottom: 35px; 
+
+     /* como o main sempre tera 90 ele n ira adicionar o margin de 50 abaixo do conteudo pq o conteudo abaixo é o limite do main entao ao inves de empurrar o limite deve-se preencher a tag p para q ela suba para cima, pois ela n passara do limite de 90% no height que é seu limite de borda */
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 15px;
+}
