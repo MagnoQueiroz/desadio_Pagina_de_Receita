@@ -5,13 +5,13 @@
 }
 
 :root {
-    --title-color: #1B1B1B;
-    --span-color: #8F8F8F;
-    --text-color: #39393A;
+    --title-color: #1b1b1b;
+    --span-color: #8f8f8f;
+    --text-color: #39393a;
 }
 
 body {
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
 }
 .main {
     margin: 40px auto 0;
@@ -34,18 +34,17 @@ body {
 }
 
 .main figure {
-    display: flexbox;
+    /* display: flexbox;  */
     text-align: center;
 }
 
 .main figure img {
-    text-align: center;
     height: 400px;
     width: 900px;
     margin-bottom: 5px;
     border-radius: 10px;
 }
-figcaption {
+.main figure figcaption {
     /* width: 98%; */
     padding-right: 40px;
     text-align: right;
@@ -57,25 +56,27 @@ section h2 {
     margin-bottom: 40px;
 }
 
-section { 
+section {
     color: var(--text-color);
     margin-bottom: 50px;
     padding: 0 10px 0 10px;
 }
-ul,ol {
+ul,
+ol {
     display: flex;
     flex-direction: column;
     gap: 14px;
 }
-ul li, p {
+ul li,
+p {
     padding-left: 13px;
 }
 
 p {
     box-sizing: border-box;
-     padding-bottom: 35px; 
+    padding-bottom: 35px;
 
-     /* como o main sempre tera 90 ele n ira adicionar o margin de 50 abaixo do conteudo pq o conteudo abaixo é o limite do main entao ao inves de empurrar o limite deve-se preencher a tag p para q ela suba para cima, pois ela n passara do limite de 90% no height que é seu limite de borda */
+    /* como o main sempre tera 90 ele n ira adicionar o margin de 50 abaixo do conteudo pq o conteudo abaixo é o limite do main entao ao inves de empurrar o limite deve-se preencher a tag p para q ela suba para cima, pois ela n passara do limite de 90% no height que é seu limite de borda */
 }
 
 footer {
